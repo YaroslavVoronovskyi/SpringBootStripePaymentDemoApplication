@@ -1,0 +1,30 @@
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+server:
+  port: 8080
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: on_param
+    include-exception: false
+
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration
+  application:
+    name: stripe
+  jackson:
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
+
+logging:
+  level:
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+    org.springframework.web: DEBUG
+    org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod: DEBUG
+
+
+stripe:
+  secretKey: sk_test_51OqdzLLtNAIxFHF1ggIuO1cmTyjUDRUpJ7Vvajar9pkhpdYDYPCG4Pb9dH4JiX33WmRSf6g9zROzdC1pikuYZBtG00bIcBO9vm
