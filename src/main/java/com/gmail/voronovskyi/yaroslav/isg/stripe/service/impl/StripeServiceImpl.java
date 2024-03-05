@@ -17,11 +17,10 @@ import org.springframework.stereotype.Service;
 
 @Slf4j
 @Service
-@RequiredArgsConstructor
 public class StripeServiceImpl implements StripeService {
 
     @Value("${stripe.secretKey}")
-    private final String secretKey;
+    private String secretKey;
 
     @Override
     public StripeResponse createPayment(CreatePaymentRequest createPaymentRequest) {
