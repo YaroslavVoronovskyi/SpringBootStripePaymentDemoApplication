@@ -13,17 +13,7 @@ Additionally, Stripe offers a Test mode for developers to simulate transactions 
 
 Clone the repository:
 
-```git clone https://github.com/orlandolorenzo724/stripe.git```
-
-## Maven Dependency
-```
-<!-- https://mvnrepository.com/artifact/com.stripe/stripe-java -->
-<dependency>
-    <groupId>com.stripe</groupId>
-    <artifactId>stripe-java</artifactId>
-    <version>24.3.0-beta.1</version>
-</dependency>
-```
+```git clone git@github.com:YaroslavVoronovskyi/SpringBootStripePaymentDemoApplication.git```
 
 ## API Endpoints
 ### Create Payment
